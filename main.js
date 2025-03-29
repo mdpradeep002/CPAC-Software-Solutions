@@ -1,9 +1,10 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('nav .nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
         });
     });
 });
