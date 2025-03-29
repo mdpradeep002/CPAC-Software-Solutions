@@ -10,19 +10,21 @@ body {
     background-color: #f8f9fa;
     color: #333;
 }
-
 /* Header */
 header {
     background-color: #34495e;
     color: white;
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
+    height: 200px;  /* Adjust this value to fit your logo size */
 }
 
 nav .logo img {
-    width: 100px;
-    height: auto;
+    width: 100%;    /* Makes the logo fill the width of the screen */
+    height: auto;   /* Maintains the aspect ratio */
+    object-fit: contain;  /* Ensures the logo scales without distortion */
 }
+
 
 nav .nav-links {
     list-style-type: none;
